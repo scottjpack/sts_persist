@@ -8,14 +8,23 @@ If you aren't able to use the role to create a different user for long-term acce
 PREREQUISITES:
 
 1 - Install awscli (pip install awscli)
+
 2 - Install flask (pip install flask)
+
 3 - Set up an awscli initial profile (aws configure)
+
 	You may use bogus info for the initial profile, it just needs to create the config/credentials file structure
+	
 4 - Run run.py
+
 	It's a foreground process, so you'll probably want to do this in screen
+	
 5 - Update sts_persist.py Line 9 with reporter IP/Hostname:
+
 	This will let the agent know where to send the credentials
+	
 5 - Deploy and run the sts_persist.py script on the victim.
+
 	Set it in cron, run it every 5 mins or so
 	TODO: Loop it
 
