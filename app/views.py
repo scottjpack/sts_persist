@@ -77,6 +77,5 @@ def update_profile():
 
    #Write to credentials file
    write_aws_profiles(outfile)
-
-   print outfile
+   print "Wrote updated profile: %s" % profile_name
    return "Thank you, come again"
